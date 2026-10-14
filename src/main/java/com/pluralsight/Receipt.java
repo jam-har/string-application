@@ -2,9 +2,10 @@ package com.pluralsight;
 
 public class Receipt {
     public static void main(String[] args) {
-        String car = "This new car costs $";
+        String car = "The price of ";
         double carPrice = 30584.98;
-        int discountDays = 14;
-        System.out.println(car + carPrice + " for the next " + discountDays + " days.");
+        int quantity = 2;
+        double carTotal = carPrice * quantity;
+        System.out.println(car + quantity + " new cars is $" + carTotal + ".");
     }
 }
